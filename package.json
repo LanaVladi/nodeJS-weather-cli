@@ -2,10 +2,13 @@
   "name": "weather-cli",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,7 +18,19 @@
   "author": "Svetlana Gorlova",
   "license": "ISC",
   "homepage": "//https:....",
-  "repository": {"type": "git", "url": "..."},
-  "bugs": {"url": "...",
-           "email": "...."}
+  "repository": {
+    "type": "git",
+    "url": "..."
+  },
+  "bugs": {
+    "url": "...",
+    "email": "...."
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12"
+  }
 }
